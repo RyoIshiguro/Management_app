@@ -1,0 +1,29 @@
+
+
+html {
+ color: white;
+ /* background-color: black; */
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+p.A{
+ color: blue;
+}
+
+#header{
+    /* color: white; */
+    color: white;
+    font-size: 2em;/*文字サイズ2倍*/
+    font-weight: bold;
+}
+
+/* a {
+    color: skyblue;
+    font-size: 2em;/*文字サイズ2倍*/
+    font-weight: bold;
+} */
+
