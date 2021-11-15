@@ -21,9 +21,6 @@ p.A{
     font-weight: bold;
 }
 
-/* a {
-    color: skyblue;
-    font-size: 2em;/*文字サイズ2倍*/
-    font-weight: bold;
-} */
-
+#staticBackdropLabel{
+    color: black;
+}

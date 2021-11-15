@@ -7,16 +7,27 @@
      console.log("excuted run");
  }
 
- function setBseName(){
-     document.getElementById("bseName").innerText = document.getElementById("斎藤");
- }
 
+// var language = document.getElementById("language");
 
-// var bse = ['斎藤','百瀨','鵜瀬'];
-// console.log(bse);
-
-var bse =document.getElementById("bseName");
-
-function getBseName() {
-    bse.textContent = "BSEを選択しました。";
+function testClick() {
+    console.log('選択されたのは' + (language.value) + 'です');
 }
+
+var langSelect = document.getElementById("language");
+langSelect.options[1].selected = true;
+
+// let languageSelect = document.getElementById('language');
+languageSelect.addEventListener('click', butotnClick);
+
+
+//select bse name
+function getBseName() {
+    console.log('選択されたのは' + (bse.value) + 'です');
+}
+
+
+var selectBse = document.getElementById("bse");
+selectBse.options[2].selected = true;
+
+selectBse.addEventListener('click', butotnClick);

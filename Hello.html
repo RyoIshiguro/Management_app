@@ -23,23 +23,20 @@
           <a class="nav-link" id="header" idhref="#">Link</a>
         </li>
     </ul> -->
+    
+
     <ul class="nav">
         <li class="nav-item">
-          <div class="nav-link active" aria-current="page">
-            <div class="btn-group">
-                <button type="button" class="btn btn-lg btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                言語を選択
-                </button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item"  onclick="getBseName">日本語</a></li>
-                <li><a class="dropdown-item"  onclick="getBseName">英語</a></li>
-                </ul>
-            </div>
-          </div>
+        <div class="nav-link">
+          <select name="" id="language" type="button" class="btn btn-primary btn-lg " onclick="testClick()">
+            <option value="japanese">日本語</option>
+            <option value="english">English</option>
+          </select>
+        </div>
         </li>
         <li class="nav-item">
           <div class="nav-link">
-            <button type="button" class="btn btn-primary btn-lg " href="#">アーカイブリスト</button>
+            <button type="button" class="btn btn-danger btn-lg " href="#">アーカイブリスト</button>
           </div>
         </li>
     </ul>
@@ -51,37 +48,38 @@
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">プロジェクトを作成</h5>
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">プロジェクト作成</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <!-- BSEを選択してください。
-            <br> -->
+          </div>
+          <div class="modal-body">
+              <P style="color: black;">プロジェクトを作成するBSEを選択してください。</P>
 
-            <!-- Example single danger button -->
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div id="bseName" onclick="getBseName()">BSEを選択</div>
-                </button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="斎藤" onclick="getBseName">斎藤</a></li>
-                <li><a class="dropdown-item" id="百瀨" onclick="getBseName">百瀨</a></li>
-                <li><a class="dropdown-item" id="鵜瀬" onclick="getBseName">鵜瀬</a></li>
-                </ul>
-            </div>
+              <!-- Example single danger button -->
+            
+              <select name="" id="bse" >
+                <option value="斎藤">斎藤</option>
+                <option value="百瀨">百瀨</option>
+                <option value="鵜瀬">鵜瀬</option>
+              </select>
 
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >キャンセル</button>
+              <button type="button" class="btn btn-primary" onclick="getBseName()">プロジェクト作成</button>
+          </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-        </div>
+      </div>
     </div>
-    </div>
+    <br>
 
+    
+    
+
+    <br>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
