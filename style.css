@@ -24,3 +24,25 @@ p.A{
 #staticBackdropLabel{
     color: black;
 }
+
+table,td,th {
+    color:red;
+    background-color: #464343;
+    /* border-collapse: collapse; */
+}
+
+tbody {
+    color: white;
+}
+
+th {
+    color: white;
+    background-color: salmon;
+}
+
+td {
+    color: white;
+}
+tr {
+    color: white;
+}
