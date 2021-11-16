@@ -15,7 +15,6 @@ p.A{
 }
 
 #header{
-    /* color: white; */
     color: white;
     font-size: 2em;/*文字サイズ2倍*/
     font-weight: bold;
@@ -26,23 +25,31 @@ p.A{
 }
 
 table,td,th {
-    color:red;
     background-color: #464343;
-    /* border-collapse: collapse; */
+    border-color: white;
+}
+
+table {
+
 }
 
 tbody {
     color: white;
+    border-color: white;
 }
 
 th {
     color: white;
     background-color: salmon;
+    border-width: thick;
 }
 
 td {
     color: white;
+    border-color: white;
+    border-width: thin;
 }
 tr {
     color: white;
+    border-width: thin;
 }
