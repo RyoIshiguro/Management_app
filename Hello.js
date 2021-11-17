@@ -47,11 +47,12 @@ function generate_table() {
     var tblBody = document.createElement("tbody");
   
     // creating all cells
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 3; i++) {
+        
       // creates a table row
       var row = document.createElement("tr");
   
-      for (var j = 0; j < 2; j++) {
+      for (var j = 0; j < 3; j++) {
         // Create a <td> element and a text node, make the text
         // node the contents of the <td>, and put the <td> at
         // the end of the table row

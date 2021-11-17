@@ -53,3 +53,9 @@ tr {
     color: white;
     border-width: thin;
 }
+
+#bsePlaceholder {
+    width: auto;
+    height: 300px;
+    background-color: coral;
+}

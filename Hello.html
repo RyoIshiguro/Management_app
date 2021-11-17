@@ -67,7 +67,7 @@
           </div>
           <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >キャンセル</button>
-              <button type="button" class="btn btn-primary" onclick="getBseName()">プロジェクト作成</button>
+              <button type="button" class="btn btn-primary" value="Generate a table." onclick="getBseName(),generate_table()">プロジェクト作成</button>
           </div>
         </div>
       </div>
@@ -77,10 +77,16 @@
     <div id="bseName" onload="run()"></div>
     <!-- <div id="bseName"></div> -->
 
-    <input type="button" value="Generate a table." onclick="generate_table()">
+    <!-- table generate button -->
+    <!-- <input type="button" value="Generate a table." onclick="generate_table()"> -->
 
     
     <br>
+
+    <div class="placeholder col-12" id="bsePlaceholder
+    ">
+  
+  </div>
     
     <script src="Hello.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
